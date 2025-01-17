@@ -65,7 +65,7 @@ function didziausias(masyvas){
 let didziausiasSk = 0;
 let index = 0;
 while(index < masyvas.lenght){
-    console.log("Tikrinu skaičių" + masyvas[index] + ">" + didžiausiasSk +)
+    console.log("Tikrinu skaičių" + masyvas[index] + ">" + didžiausiasSk +);
     if(masyvas[index] > didziausiasSk)
         index++;
 }
@@ -79,4 +79,5 @@ while(index < masyvas.lenght){
 //     index++;
 // }
 // console.log(suma);
+
 
