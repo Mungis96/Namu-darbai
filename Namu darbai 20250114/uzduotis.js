@@ -3,7 +3,7 @@ function tekstoPakitimas(){
     document.getElementById("my-button").innerHTML = tekstas;
 }  
 
-function fonoSpalva() {
+function fonoSpalva() { 
      
     let selectedColor = document.getElementById("my-color").value;
     document.body.style.backgroundColor = selectedColor
