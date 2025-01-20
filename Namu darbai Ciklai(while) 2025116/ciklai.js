@@ -43,14 +43,49 @@
 
 const masyvas = [4,5,6,7,2,4];
 
-function tikMazesni(masyvas) {
+function tikMazesni(masyvas, reiksme) {
+    function
     index = 0;
     while(index < masyvas.length) {
-        if(masyvas[index] <= 5) {
-            masyvas.splice(index,1);
-        }
+    if(masyvas[index] < reiksme) {
+        // masyvas.slice(index, 1);
+    }
         index++;
     }
 }
-tikMazesni(masyvas);
-console.log(masyvas);
+
+console.log(tikMazesni([4,5,6,7,2,4], 5));
+
+console.log();
+// atsakymas konsolėje: 4, 2, 4 
+
+
+// const masyvas = [
+// 	1,
+// 	3,
+// 	4,
+// 	9,
+// 	6,
+// 	2,
+// 	1,
+// 	0,
+// 	-44,
+// 	22,
+// 	19,
+// 	2,
+// 	"a",
+// 	true,
+// 	"false",
+// 	[4, 5, 6],
+// ];
+
+// function gautiKasAntraMasyvoElementa(masyvas) {
+// 	for (let i = 0; i < masyvas.length; i++) {
+// 		masyvas.splice(i, 1);
+// 	}
+// 	return masyvas;
+// }
+
+// console.log(gautiKasAntraMasyvoElementa(masyvas));
+
+// Sukurkite funkciją, countAllThrees(array), kuri suskaičiuotų, kiek kartų pateiktame skaičių masyve yra pasikartojantis skaičius 3;
