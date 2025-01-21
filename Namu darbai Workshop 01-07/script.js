@@ -246,9 +246,8 @@
 
 
 // 3. 
-// const Skaičius = []
-// let index = 0;
 
+// let index = 0;
 // while ( index <= 10) {
 //     index +=2;
 //     console.log(`Skaičius i = ${index}`);
@@ -268,12 +267,54 @@
 
 // console.log(suma);
 
-const members = [];
-for(i = 0; suma = 0; i <= 100; i++;) {
+// for(i = 0; i <= 100; i++) {
 // suma = 0;
-suma += i;
-}
-console.log(suma);
+// suma += i;
+// console.log(suma);
+// }
+
+// 5.  Parašykite f-ją, kuri išvestų visus skaičius, kurie dalijasi iš 3 
+// intervale nuo 0 iki 100.  
+// Uždavinį išspręskit dviem skirtingais būdais while ir for ciklu 
+
+// function allNumbers(n) {
+//     let index = 0;
+//     while(index <= 100) {
+//         if(index % n == 0) {
+//             console.log(index);
+//         }
+//         index++;
+//     }
+// } 
+// // allNumbers(1);
+
+// 6. Parašyti f-ją, kuriai būtų paduodamas bet kokio ilgio skaičius ir 
+// suskaičiuoja kiek skaitenų jį sudaro 
+// Pvz: 
+
+// function skaiciusVienas(number) {
+// //     return Math.abs(number).toString().length;
+// let result = 0;
+// number = Math.abs(number);
+// while (number > 0) {
+//     number = Math.floor(number / 10); 
+//     result++; 
+// }
+// return result;
+// }
+// console.log(skaiciusVienas(458962)) ;
+// console.log(skaiciusVienas(452)) ; 
+// console.log(skaiciusVienas(-19)); 
+
+
+// 7. Matematikas, pastebėjęs gobšaus turtuolį pasiūlė tokį sandorį: 
+// Pirmą dieną jis turtuoliui duos 1 mln. dolerių, o tas jam už tai sumokės 2 
+// centus. Kitą dieną matematikas ir vėl duos turtuoliui 1 mln. dolerių, o tas 
+// jam užmokės dvigubai daugiau negu praėjusią dieną, t.y. 4 centus. Ir taip jie 
+// darys visą mėnesį (31 dieną, matematikas kasdien duos po milijoną dolerių, o 
+// turtuolis mokės dvigubai daugiau negu praėjusią dieną. Parašykite programą 
+// kuri suskaičiuotų kiek pinigų duos matematikas . turtuoliui ir kiek turtuolis 
+// sumokės matematikui.
 
 
 
