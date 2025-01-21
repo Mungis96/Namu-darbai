@@ -41,22 +41,22 @@
 // tikMazesni([4,5,6,7,2,4], 5);
 // atsakymas konsolėje: 4, 2, 4 
 
-const masyvas = [4,5,6,7,2,4];
+// const masyvas = [4,5,6,7,2,4];
 
-function tikMazesni(masyvas, reiksme) {
-    function
-    index = 0;
-    while(index < masyvas.length) {
-    if(masyvas[index] < reiksme) {
-        // masyvas.slice(index, 1);
-    }
-        index++;
-    }
-}
+// function tikMazesni(masyvas, reiksme) {
 
-console.log(tikMazesni([4,5,6,7,2,4], 5));
+//     index = 0;
+//     while(index < masyvas.length) {
+//     if(masyvas[index] < reiksme) {
+//         masyvas.slice(index, 1);
+//     }
+//         index++;
+//     }
+// }
 
-console.log();
+// console.log(tikMazesni([4,5,6,7,2,4], 5));
+
+// console.log();
 // atsakymas konsolėje: 4, 2, 4 
 
 
@@ -89,3 +89,46 @@ console.log();
 // console.log(gautiKasAntraMasyvoElementa(masyvas));
 
 // Sukurkite funkciją, countAllThrees(array), kuri suskaičiuotų, kiek kartų pateiktame skaičių masyve yra pasikartojantis skaičius 3;
+
+// function countAllThrees(array) {
+//     let pasikartojimuSkaicius = 0;
+
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] == 3) {
+//             pasikartojimuSkaicius++;
+//         }
+//     }
+
+//     return pasikartojimuSkaicius;
+
+// }
+// console.log(countAllThrees([3,3,4,5,6,3,3, 33]));
+
+// Sukurkite funkcijas countAllEven(array) ir countAllOdd(array). Pirmoji funkcija suskaičiuoja, kiek yra lyginių skaičių pateiktame masyve. Kita suskaičiuoja kiek yra nelyginių skaičių;
+
+
+
+function countAllEven(array) {
+    let kiekPasikartojimu = 0;
+    for(let i = 0; i < array.length; i++)
+    {
+        if(array[i] % 2 == 0) {
+            kiekPasikartojimu++;
+        }
+    } 
+    return kiekPasikartojimu;
+}
+
+function countAllOdd(array) {
+    let kiekPasikartojimu = 0;
+    for(let i = 0; i < array.length; i++)
+    {
+        if(array[i] % 2 != 0) {
+            kiekPasikartojimu++;
+        }
+    } 
+    return kiekPasikartojimu;
+}
+
+console.log(countAllEven([2,4,5,7,9,13,14]));
+console.log(countAllOdd([2,4,5,7,9,13,14]));
