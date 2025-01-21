@@ -41,16 +41,94 @@
 // tikMazesni([4,5,6,7,2,4], 5);
 // atsakymas konsolėje: 4, 2, 4 
 
-const masyvas = [4,5,6,7,2,4];
+// const masyvas = [4,5,6,7,2,4];
 
-function tikMazesni(masyvas) {
-    index = 0;
-    while(index < masyvas.length) {
-        if(masyvas[index] <= 5) {
-            masyvas.splice(index,1);
-        }
-        index++;
-    }
-}
-tikMazesni(masyvas);
-console.log(masyvas);
+// function tikMazesni(masyvas, reiksme) {
+
+//     index = 0;
+//     while(index < masyvas.length) {
+//     if(masyvas[index] < reiksme) {
+//         masyvas.slice(index, 1);
+//     }
+//         index++;
+//     }
+// }
+
+// console.log(tikMazesni([4,5,6,7,2,4], 5));
+
+// console.log();
+// atsakymas konsolėje: 4, 2, 4 
+
+
+// const masyvas = [
+// 	1,
+// 	3,
+// 	4,
+// 	9,
+// 	6,
+// 	2,
+// 	1,
+// 	0,
+// 	-44,
+// 	22,
+// 	19,
+// 	2,
+// 	"a",
+// 	true,
+// 	"false",
+// 	[4, 5, 6],
+// ];
+
+// function gautiKasAntraMasyvoElementa(masyvas) {
+// 	for (let i = 0; i < masyvas.length; i++) {
+// 		masyvas.splice(i, 1);
+// 	}
+// 	return masyvas;
+// }
+
+// console.log(gautiKasAntraMasyvoElementa(masyvas));
+
+// Sukurkite funkciją, countAllThrees(array), kuri suskaičiuotų, kiek kartų pateiktame skaičių masyve yra pasikartojantis skaičius 3;
+
+// function countAllThrees(array) {
+//     let pasikartojimuSkaicius = 0;
+
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] == 3) {
+//             pasikartojimuSkaicius++;
+//         }
+//     }
+
+//     return pasikartojimuSkaicius;
+
+// }
+// console.log(countAllThrees([3,3,4,5,6,3,3, 33]));
+
+// Sukurkite funkcijas countAllEven(array) ir countAllOdd(array). Pirmoji funkcija suskaičiuoja, kiek yra lyginių skaičių pateiktame masyve. Kita suskaičiuoja kiek yra nelyginių skaičių;
+
+
+
+// function countAllEven(array) {
+//     let kiekPasikartojimu = 0;
+//     for(let i = 0; i < array.length; i++)
+//     {
+//         if(array[i] % 2 == 0) {
+//             kiekPasikartojimu++;
+//         }
+//     } 
+//     return kiekPasikartojimu;
+// }
+
+// function countAllOdd(array) {
+//     let kiekPasikartojimu = 0;
+//     for(let i = 0; i < array.length; i++)
+//     {
+//         if(array[i] % 2 != 0) {
+//             kiekPasikartojimu++;
+//         }
+//     } 
+//     return kiekPasikartojimu;
+// }
+
+// console.log(countAllEven([2,4,5,7,9,13,14]));
+// console.log(countAllOdd([2,4,5,7,9,13,14]));

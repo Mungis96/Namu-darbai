@@ -11,7 +11,7 @@
 
 // function paskutinisSimbolis(tekstas) {
 //     return tekstas.charAt(tekstas.length - 1);
-// }
+// } 
 
 // let rezultatas2 = paskutinisSimbolis("Augustas");
 // console.log ( rezultatas2);
