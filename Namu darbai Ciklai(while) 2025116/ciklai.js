@@ -108,27 +108,27 @@
 
 
 
-function countAllEven(array) {
-    let kiekPasikartojimu = 0;
-    for(let i = 0; i < array.length; i++)
-    {
-        if(array[i] % 2 == 0) {
-            kiekPasikartojimu++;
-        }
-    } 
-    return kiekPasikartojimu;
-}
+// function countAllEven(array) {
+//     let kiekPasikartojimu = 0;
+//     for(let i = 0; i < array.length; i++)
+//     {
+//         if(array[i] % 2 == 0) {
+//             kiekPasikartojimu++;
+//         }
+//     } 
+//     return kiekPasikartojimu;
+// }
 
-function countAllOdd(array) {
-    let kiekPasikartojimu = 0;
-    for(let i = 0; i < array.length; i++)
-    {
-        if(array[i] % 2 != 0) {
-            kiekPasikartojimu++;
-        }
-    } 
-    return kiekPasikartojimu;
-}
+// function countAllOdd(array) {
+//     let kiekPasikartojimu = 0;
+//     for(let i = 0; i < array.length; i++)
+//     {
+//         if(array[i] % 2 != 0) {
+//             kiekPasikartojimu++;
+//         }
+//     } 
+//     return kiekPasikartojimu;
+// }
 
-console.log(countAllEven([2,4,5,7,9,13,14]));
-console.log(countAllOdd([2,4,5,7,9,13,14]));
+// console.log(countAllEven([2,4,5,7,9,13,14]));
+// console.log(countAllOdd([2,4,5,7,9,13,14]));
