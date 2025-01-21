@@ -15,6 +15,7 @@
 // produktuKainos.push(produktuKaina5);
 // produktuKainos.push(produktuKaina6);
 
+
 // console.log(produktuKainos);
 // function paklauskProduktuKainos(kelintasProduktas)
 // paklauskMisisipiuKiekio(1);
