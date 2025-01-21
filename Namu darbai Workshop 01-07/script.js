@@ -203,7 +203,7 @@
 
 // UZDUOTIS NR. 3 
 
-1. 
+// 1. 
 // Parašykite f-ją, kuri išvestų nurodyto skaičiaus daugybos lentelę 
 // Multiplication(3) 
 // 1 * 3 = 3 
@@ -244,6 +244,36 @@
 // }
 // console.log(text)
 
+
+// 3. 
+// const Skaičius = []
+// let index = 0;
+
+// while ( index <= 10) {
+//     index +=2;
+//     console.log(`Skaičius i = ${index}`);
+// }
+
+// 4.Naudojantis ciklu, sumuokite visus skaičius nuo 1 iki 100 ir išveskite 
+// galutinį rezultatą. 
+// Uždavinį išspręskit dviem skirtingais būdais while ir for ciklu 
+
+// const members = [];
+// let index = 0;
+// suma = 0;
+// while( index <= 100) {
+//     suma += index;
+//     index++;
+// }
+
+// console.log(suma);
+
+const members = [];
+for(i = 0; suma = 0; i <= 100; i++;) {
+// suma = 0;
+suma += i;
+}
+console.log(suma);
 
 
 
