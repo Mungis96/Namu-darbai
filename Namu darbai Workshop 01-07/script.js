@@ -487,10 +487,26 @@
 // Ir gražinamas masyvas kurio elementai yra padauginti iš 2 
 // @example: multipliedArray([1, 2, 3, 4, 5, 6]) ➞ [2, 4, 6, 8, 10, 12] 
 
-function multipliedArray(masyvas) {
-    let daugiklis = 2;
-    for(let i = 0; masyvas.lenght > 0; i++) {
-       masyvas[i] * daugiklis;
-    }
+// function multipliedArray(masyvas) {
+//     return masyvas.map(num => num * 2);
+// }
+// console.log(multipliedArray([1, 2, 3, 4, 5, 6]));
+
+// function multipliedArray(masyvas) {
+    
+//     for(let i = 0; i < masyvas.length; i++)  {
+//        masyvas[i] *= 2; 
+//     }
+//     return masyvas;
+// }
+// console.log(multipliedArray([1, 2, 3, 4, 5, 6]));
+
+// 8. Parašykite f-ją, kuri konvertuotų visus masyvo elementus į stringus 
+// @example: parseArray([1, 2, "a", "b"]) ➞ ["1", "2", "a", "b"]  
+// parseArray(["abc", 123, "def", 456]) ➞ ["abc", "123", "def", "456"]  
+
+function parseArray(masyvas) {
+    masyvas.join();
+    return masyvas
 }
-console.log(multipliedArray([1, 2, 3, 4, 5, 6]));
+console.log(parseArray([1, 2, "a", "b"]));
