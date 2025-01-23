@@ -316,13 +316,143 @@
 // kuri suskaičiuotų kiek pinigų duos matematikas . turtuoliui ir kiek turtuolis 
 // sumokės matematikui.
 
+// function kiekGausime() {
+//     let turtuolisGaus = 0;
+//     let matematikasGaus = 0.02;
+//     for(let i = 1; i <=31 ; i++ ) {
+//           turtuolisGaus += 1;
+//           matematikasGaus *= 2;
+//     }
+//     matematikasGaus = (matematikasGaus / 1000000).toFixed(1); 
+//     return `Turtuolis gaus ${turtuolisGaus} mln. $ , o matematikas gaus ${matematikasGaus} mln. $ pinigų;`
+// }
+
+// console.log(kiekGausime());
+
+// 8. Parašyti programą kuri atspausdintu visus Armstrongo skaičius nuo 100 
+// iki 999 intervale. Armstongo skaičiaus pvz ABC = A3 + B3 + C3 (visų 
+// atskirų skaitmenų pakeltų skaičiaus skaitmenų kiekio laipsniu suma.)
+
+// function allArmstrong(skaicius) {
+//     let skaitmenys = [];
+//     let simboliai = (String(skaicius));
+//     if(simboliai.length == 3) {
+//         let suma = 0;
+//         for (let i = 0; i < 3; i++) {
+//             skaitmenys.push(simboliai[i]);
+//             kubas = Number(skaitmenys[i]) **3;
+//             suma = kubas
+//         }
+//         return(suma);
+//     } else return "Skaičius turi būti triženklis";
+// }
+
+// for (let i = 100; i <= 999; i++){
+//     if (allArmstrong(i) === i) {
+//         console.log(i);
+//     }
+// }
+
+// 9. Parašykite funkcija kuri paskaičiuotų atstumą tarp dviejų taškų 
+// koordinačių sistemoje. Parametrai 4 perduodami skaičiai x1, y1, x2, y2  
+// @example:  
+// (0,0) (0,1) => 1  
+// (0,0) (1,0) => 1  
+// (-5,0) (10,-10) => 
+// 18.027756377319946 
+
+// function distanceBetween(x1, y1, x2, y2) {
+//     let a = x1 - x2;
+//     let b = y1 - y2;
+//     let c = Math.hypot(a, b);
+//     return c;
+// }
+
+// console.log("9.Atstumas tarp taškų", distanceBetween(-3, 0, 15, -10));
+
+// 1. Parašykite programą, kuri suskaičiuotų , kiek duotas skaičius a turi 
+// lyginių ir nelyginių skaitmenų.  
+// @example:                    
+// 63258 => ‘3 skaičiai lyginiai, 2 nelyginiai’ 
+
+// function kiekSkaiciu(n) {
+//     let lyginiai = 0;
+//     let nelyginiai = 0;
+//     while(n>0) {
+//         let last = n % 10;
+//         if(last % 2 == 0) {
+//             lyginiai++;
+//         }
+//         else{
+//             nelyginiai++;
+//         }
+//         n = Math.floor(n / 10)
+//     }
+//     return `${lyginiai} skaičiai lyginiai, ${nelyginiai} skaičiai nelyginiai` ;
+// }
+// console.log(kiekSkaiciu(4,6,7,8,2,1,4,5,6))
+
+// 2. Parašykite funkciją, kuri priimtų parametru du tekstus ir išvestų kuris 
+// tekstas ilgesnis ir tą tekstą 
+// @example:  (‘abc’, ‘b’) => ‘tekstas “abc” yra ilgesnis, jo ilgis 3 simboliai’  
+// (‘abcd’, ‘abcd’) => ‘abu tekstai lygus, jų ilgis 4 simboliai’
+
+function duTekstai(a, b) {
+    if(a.lenght > b.lenght) {
+        return `tekstas ${a} yra ilgesnis, jo ilgis ${a.lenght} simboliai`;
+    }
+    else if (a.lenght < b.lenght) {
+        return `tekstas ${b} yra ilgesnis, jo ilgis ${b.lenght} simboliai`;
+    }
+    else {
+        return `abu tekstai lygus, jų ilgis 4 simboliai`
+
+    }
+}
+
+// 3. Sukurkite tuščią masyvą.  
+// • Įdėkite 4 elementus į masyvą  
+// • Pridėkite 1 elementą į masyvo galą  
+// • Ištrinkite vidurinį elementą ir išveskite jį į consolę  
+// • Išveskite į consolę masyvą pasirašytos f-jos pagalba.  
+// • Pakeiskite 2 elementą nauja reikšme  
+// • Pridėkite du naujus elementus į masyvo pradžią  
+// • Išveskite į consolę masyvą pasirašytos f-jos pagalba.
+
+// let masyvas =["as", 2, "tu", 3, "jis", 5, "ji", 7];
+
+// masyvas.push("robinas");
+// console.log(masyvas);
+
+// const pr = masyvas.splice(Math.floor(masyvas.length/2),1);
+// console.log(pr);
+
+// function print(masyvas) {
+//     for(let i = 0; i < masyvas.length; i++) {
+//         console.log(masyvas[i]);
+//     }
+// }
+// print(masyvas);
+
+// masyvas[1] = "Albinosas";
+// console.log(masyvas); 
+
+// masyvas.unshift("Vanagas", 54);
+// masyvas.splice(0, 0, "Vanagas", 54);
+
+// console.log(masyvas);
+
+// print(masyvas);
+
+// 4. Parašykite f-ją kur konvertuotų masyvą į stringą 
+// @example:  arrayToString([1, 2, 3, 4, 5, 6]) ➞ "123456"       
+// arrayToString(["a", "b", "c", "d", "e", "f"]) ➞ "abcdef"           
+// arrayToString([1, 2, 3, "a", "s", "dAAAA"]) ➞ "123asdAAAA"
 
 
+function arrayToString() {
+    const masyvas = [];
+    const masyvasTekstas = masyvas.toString();
     
-
-
-
-
-
-
-
+}
+console.log(arrayToString(masyvasTekstas));
