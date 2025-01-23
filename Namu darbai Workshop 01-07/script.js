@@ -397,18 +397,18 @@
 // @example:  (‘abc’, ‘b’) => ‘tekstas “abc” yra ilgesnis, jo ilgis 3 simboliai’  
 // (‘abcd’, ‘abcd’) => ‘abu tekstai lygus, jų ilgis 4 simboliai’
 
-function duTekstai(a, b) {
-    if(a.lenght > b.lenght) {
-        return `tekstas ${a} yra ilgesnis, jo ilgis ${a.lenght} simboliai`;
-    }
-    else if (a.lenght < b.lenght) {
-        return `tekstas ${b} yra ilgesnis, jo ilgis ${b.lenght} simboliai`;
-    }
-    else {
-        return `abu tekstai lygus, jų ilgis 4 simboliai`
+// function duTekstai(a, b) {
+//     if(a.lenght > b.lenght) {
+//         return `tekstas ${a} yra ilgesnis, jo ilgis ${a.lenght} simboliai`;
+//     }
+//     else if (a.lenght < b.lenght) {
+//         return `tekstas ${b} yra ilgesnis, jo ilgis ${b.lenght} simboliai`;
+//     }
+//     else {
+//         return `abu tekstai lygus, jų ilgis 4 simboliai`
 
-    }
-}
+//     }
+// }
 
 // 3. Sukurkite tuščią masyvą.  
 // • Įdėkite 4 elementus į masyvą  
@@ -450,9 +450,47 @@ function duTekstai(a, b) {
 // arrayToString([1, 2, 3, "a", "s", "dAAAA"]) ➞ "123asdAAAA"
 
 
-function arrayToString() {
-    const masyvas = [];
-    const masyvasTekstas = masyvas.toString();
+// function arrayString(masyvas) {
+//     masyvas.toString()
+//     return masyvas.join("");
+   
+// }
+// console.log(arrayString([1, 2, 3, 4, 5, 6]));
+
+// 5. Parašykite f-ją kuri apverstų masyvą 
+// @example:  reverse([1, 2, 3, 4]) ➞ [4, 3, 2, 1]  
+// reverse([9, 9, 2, 3, 4]) ➞ [4, 3, 2, 9, 9]  
+// reverse([]) ➞ [] 
+
+// function kitaPuse(masyvas) {
+//     masyvas.reverse();
+//     return masyvas;
     
+// }
+// console.log(kitaPuse([1, 2, 3, 4]));
+
+// 6. Parašykite f-ją kuri gražintų paskutinį masyvo elementą 
+// @example:  
+// getLastItem([1, 2, 3]) ➞ 3            
+// getLastItem(["cat", "dog", "duck"]) ➞ "duck"            
+// getLastItem([true, false, true]) ➞ true 
+
+// function getLastItem(masyvas) {
+//     const paskutinisEl = masyvas.slice(2, 3)
+//     return paskutinisEl.join()
+// }
+// console.log(getLastItem([1, 2, 3]));
+// console.log(getLastItem(["cat", "dog", "duck"]));
+// console.log(getLastItem([true, false, true]));
+
+// 7. Parašykite f-ją kuriai būtų perduodamas parametras masyvas iš skaičių. 
+// Ir gražinamas masyvas kurio elementai yra padauginti iš 2 
+// @example: multipliedArray([1, 2, 3, 4, 5, 6]) ➞ [2, 4, 6, 8, 10, 12] 
+
+function multipliedArray(masyvas) {
+    let daugiklis = 2;
+    for(let i = 0; masyvas.lenght > 0; i++) {
+       masyvas[i] * daugiklis;
+    }
 }
-console.log(arrayToString(masyvasTekstas));
+console.log(multipliedArray([1, 2, 3, 4, 5, 6]));
