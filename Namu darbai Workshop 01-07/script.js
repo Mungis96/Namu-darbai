@@ -505,8 +505,16 @@
 // @example: parseArray([1, 2, "a", "b"]) ➞ ["1", "2", "a", "b"]  
 // parseArray(["abc", 123, "def", 456]) ➞ ["abc", "123", "def", "456"]  
 
-function parseArray(masyvas) {
-    masyvas.join();
-    return masyvas
-}
-console.log(parseArray([1, 2, "a", "b"]));
+// function parseArray(masyvas) {
+//    return masyvas.map(item => String(item));
+// }
+// console.log(parseArray([1, 2, "a", "b"]));
+
+
+
+    const masive =[];
+    
+
+console.log([1, 2, "a", "b"].join());
+
+
