@@ -510,11 +510,11 @@
 // }
 // console.log(parseArray([1, 2, "a", "b"]));
 
+    // function parseArray(masyvas) {
+    //     return masyvas.map(String);
+    // }
+    // console.log(parseArray([1, 2, "a", "b"]));
 
+    9.  Išvesti į consolę visą daugybos lentelę (ciklas cikle pagalba)
 
-    const masive =[];
-    
-
-console.log([1, 2, "a", "b"].join());
-
-
+    function
