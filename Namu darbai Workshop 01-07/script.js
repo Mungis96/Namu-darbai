@@ -511,8 +511,22 @@
 
 // 9.  Išvesti į consolę visą daugybos lentelę (ciklas cikle pagalba)
 
-// function
 
+function daugybosLentele() {
+    for( i = 1; i <= 10; i++) {
+        for(j = 1; j <= 10; j++) {
+            System.out.print(i + " * " + j + " = " + (i * j) + "\t");
+        }
+        System.out.printIn();
+    }
+}
+console.log(daugybosLentele());
+
+function daugybosLentele() {
+    for( i = 1; i <= 10; i++) {
+        
+    }
+}
 // 1. Sugeneruokit atsitiktinių reikšmių masyvą, masyvo elementų skaičius 30, Masyvo
 // elementų reikšmės nuo 1 iki 10. Tai yra klasės mokinių vidurkiai. Rasti
 // geriausiai besimokantį ir blogiausiai.
@@ -682,13 +696,13 @@
 //   return masyvas;
 // }
  
-console.log(pakeistiStrinIStringIlgi(obuolys));
+// console.log(pakeistiStrinIStringIlgi(obuolys));
 
-function stringIlgis(arr) {
-    return arr.map(str => str.length);
-  }
+// function stringIlgis(arr) {
+//     return arr.map(str => str.length);
+//   }
    
-  let input = [ '', 'a', 'bc', 'def', 'ghij' ];
-  let output = stringIlgis(input);
-  console.log(output);
+//   let input = [ '', 'a', 'bc', 'def', 'ghij' ];
+//   let output = stringIlgis(input);
+//   console.log(output);
 
