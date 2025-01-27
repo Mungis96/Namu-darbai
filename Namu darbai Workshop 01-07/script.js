@@ -512,52 +512,53 @@
 // 9.  Išvesti į consolę visą daugybos lentelę (ciklas cikle pagalba)
 
 
-function daugybosLentele() {
-    for( i = 1; i <= 10; i++) {
-        for(j = 1; j <= 10; j++) {
-            System.out.print(i + " * " + j + " = " + (i * j) + "\t");
-        }
-        System.out.printIn();
-    }
-}
-console.log(daugybosLentele());
+// function daugybosLentele() {
+//     for( i = 1; i <= 10; i++) {
+//         for(j = 1; j <= 10; j++) {
+//             System.out.print(i + " * " + j + " = " + (i * j) + "\t");
+//         }
+//         System.out.printIn();
+//     }
+// }
+// console.log(daugybosLentele());
 
-function daugybosLentele() {
-    for( i = 1; i <= 10; i++) {
+// function daugybosLentele() {
+//     for( i = 1; i <= 10; i++) {
         
-    }
-}
+//     }
+// }
+
 // 1. Sugeneruokit atsitiktinių reikšmių masyvą, masyvo elementų skaičius 30, Masyvo
 // elementų reikšmės nuo 1 iki 10. Tai yra klasės mokinių vidurkiai. Rasti
 // geriausiai besimokantį ir blogiausiai.
 
-// function rand(min, max) {
-//     return Math.floor(Math.random() * (max - min + 1)) + min;
-//   }
-//   const atsitiktiniai = [];
-//   function generuotiAtsitiktinius(n = 30, m = 1, o = 10) {
-//     for (let i = 0; i < n; i++) {
-//       let atsitiktinisSk = rand(m, o);
-//       atsitiktiniai.push(atsitiktinisSk);
-//     }
-//     return atsitiktiniai;
-//   }
+function rand(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  const atsitiktiniai = [];
+  function generuotiAtsitiktinius(n = 30, m = 1, o = 10) {
+    for (let i = 0; i < n; i++) {
+      let atsitiktinisSk = rand(m, o);
+      atsitiktiniai.push(atsitiktinisSk);
+    }
+    return atsitiktiniai;
+  }
 
-//   function geriausiBlogiausi(masyvas){
-//     const didziausias = [];
-//     const maziausias = [];
-//     for(let i = 0; i < masyvas.length; i++ ) {
-//         if (masyvas[i] == 10) {
-//             didziausias.push(masyvas[i]);
-//         } else if (masyvas[i]== 1) {
-//             maziausias.push(masyvas[i]);
-//         }
-//     }
-//     return {didziausias, maziausias};
-//   }
+  function geriausiBlogiausi(masyvas){
+    const didziausias = [];
+    const maziausias = [];
+    for(let i = 0; i < masyvas.length; i++ ) {
+        if (masyvas[i] == 10) {
+            didziausias.push(masyvas[i]);
+        } else if (masyvas[i]== 1) {
+            maziausias.push(masyvas[i]);
+        }
+    }
+    return {didziausias, maziausias};
+  }
 
-//   console.log(generuotiAtsitiktinius());
-//   console.log(geriausiBlogiausi(atsitiktiniai));
+  console.log(generuotiAtsitiktinius());
+  console.log(geriausiBlogiausi(atsitiktiniai));
 
 //     2. Studento trimestro disciplinų skaičius yra 7, kiekvienoje disciplinoj min 3
 // pažymiai. Rasti studento semestro vidurkį.
