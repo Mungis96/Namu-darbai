@@ -512,21 +512,22 @@
 // 9.  Išvesti į consolę visą daugybos lentelę (ciklas cikle pagalba)
 
 
-function daugybosLentele() {
-    for( i = 1; i <= 10; i++) {
-        for(j = 1; j <= 10; j++) {
-            System.out.print(i + " * " + j + " = " + (i * j) + "\t");
-        }
-        System.out.printIn();
-    }
-}
-console.log(daugybosLentele());
+// function daugybosLentele() {
+//     for( i = 1; i <= 10; i++) {
+//         for(j = 1; j <= 10; j++) {
+//             System.out.print(i + " * " + j + " = " + (i * j) + "\t");
+//         }
+//         System.out.printIn();
+//     }
+// }
+// console.log(daugybosLentele());
 
-function daugybosLentele() {
-    for( i = 1; i <= 10; i++) {
+// function daugybosLentele() {
+//     for( i = 1; i <= 10; i++) {
         
-    }
-}
+//     }
+// }
+
 // 1. Sugeneruokit atsitiktinių reikšmių masyvą, masyvo elementų skaičius 30, Masyvo
 // elementų reikšmės nuo 1 iki 10. Tai yra klasės mokinių vidurkiai. Rasti
 // geriausiai besimokantį ir blogiausiai.
@@ -616,46 +617,46 @@ function daugybosLentele() {
 // Sudėtingesnis variantas susigeneruojam masyvą iš random skaičių nuo 500 iki 
 // 1100, elementų gali būti 100
 
-// function rand(min, max) {
-//         return Math.floor(Math.random() * (max - min + 1)) + min;
-//       }
-//       const atsitiktiniai = [];
-//       function generuotiAtsitiktinius(n = 100, m = 500, o = 1100) {
-//         for (let i = 0; i < n; i++) {
-//           let atsitiktinisSk = rand(m, o);
-//           atsitiktiniai.push(atsitiktinisSk);
-//         }
-//         return atsitiktiniai;
-//       }
-// function trysAtlyginimai(n) {
-//     let maziauNei600 = 0;
-//     let maziauNei800 = 0;
-//     let maziauNei1100 = 0;
-//     for(let i = 0; i < n.length; i++) {
-//         if(n[i]< 600) {
-//             maziauNei600++;
-//         } else if(n[i] < 800) {
-//             maziauNei800++;
-//         } else {
-//             maziauNei1100++;
-//         }
+function rand(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+      const atsitiktiniai = [];
+      function generuotiAtsitiktinius(n = 100, m = 500, o = 1100) {
+        for (let i = 0; i < n; i++) {
+          let atsitiktinisSk = rand(m, o);
+          atsitiktiniai.push(atsitiktinisSk);
+        }
+        return atsitiktiniai;
+      }
+function trysAtlyginimai(n) {
+    let maziauNei600 = 0;
+    let maziauNei800 = 0;
+    let maziauNei1100 = 0;
+    for(let i = 0; i < n.length; i++) {
+        if(n[i]< 600) {
+            maziauNei600++;
+        } else if(n[i] < 800) {
+            maziauNei800++;
+        } else {
+            maziauNei1100++;
+        }
         
-//     }
+    }
 
-//     if(maziauNei600 > maziauNei800 && maziauNei600 > maziauNei1100) {
-//          return `Daugiausiai yra atlyginimų po 600 kurių yra ${maziauNei600}` ;
-//     }
-//     else if(maziauNei800 > maziauNei600 && maziauNei800 > maziauNei1100) {
-//         return `Daugiausiai yra atlyginimų po 800 kurių yra ${maziauNei800}`
-//     }
-//     else if(maziauNei1100 > maziauNei600 && maziauNei1100 > maziauNei800) {
-//         return `Daugiausiai yra atlyginimų po 1100 kurių yra ${maziauNei1100}`
-//     } else return "Po lygiai";
-// }
+    if(maziauNei600 > maziauNei800 && maziauNei600 > maziauNei1100) {
+         return `Daugiausiai yra atlyginimų po 600 kurių yra ${maziauNei600}` ;
+    }
+    else if(maziauNei800 > maziauNei600 && maziauNei800 > maziauNei1100) {
+        return `Daugiausiai yra atlyginimų po 800 kurių yra ${maziauNei800}`
+    }
+    else if(maziauNei1100 > maziauNei600 && maziauNei1100 > maziauNei800) {
+        return `Daugiausiai yra atlyginimų po 1100 kurių yra ${maziauNei1100}`
+    } else return "Po lygiai";
+}
     
-//       console.log(generuotiAtsitiktinius());
-//     //   console.log(geriausiBlogiausi(atsitiktiniai));
-//     console.log(trysAtlyginimai(atsitiktiniai));
+      console.log(generuotiAtsitiktinius());
+    //   console.log(geriausiBlogiausi(atsitiktiniai));
+    console.log(trysAtlyginimai(atsitiktiniai));
 
 // 4. Parašyti f-ją kuri sudvigubintu masyvą 
 // @example 
